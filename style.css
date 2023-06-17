@@ -1,0 +1,42 @@
+a {
+  font-family: "Ubuntu", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.greyText {
+  color: #5E6282;
+}
+
+.showCase header {
+  padding: 20px 0%;
+}
+.showCase header .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  font-size: 0;
+}
+.showCase header .container .right {
+  float: right;
+}
+.showCase header .container .right select {
+  border: none;
+  padding-left: 20px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+}
+.showCase header .container .right #signUp {
+  border: 1px #212832 solid;
+  border-radius: 3px;
+}
+.showCase header .container .right a {
+  padding: 0 20px;
+  line-height: 32px;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+  color: #212832;
+}
+.showCase .info {
+  width: 50%;
+}/*# sourceMappingURL=style.css.map */
