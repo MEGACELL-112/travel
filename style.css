@@ -1,5 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
 a {
   font-family: "Ubuntu", sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  font-size: 0;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 27px;
+  color: #5E6282;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -7,29 +27,29 @@ a {
   color: #5E6282;
 }
 
+.showCase {
+  background-image: url("Decore.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 39%;
+}
 .showCase header {
   padding: 20px 0%;
 }
-.showCase header .container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  font-size: 0;
-}
-.showCase header .container .right {
+.showCase header .right {
   float: right;
 }
-.showCase header .container .right select {
+.showCase header .right select {
   border: none;
   padding-left: 20px;
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
 }
-.showCase header .container .right #signUp {
+.showCase header .right #signUp {
   border: 1px #212832 solid;
   border-radius: 3px;
 }
-.showCase header .container .right a {
+.showCase header .right a {
   padding: 0 20px;
   line-height: 32px;
   display: inline-block;
@@ -38,5 +58,338 @@ a {
   color: #212832;
 }
 .showCase .info {
+  font-family: "Ubuntu", sans-serif;
   width: 50%;
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.showCase .info img {
+  width: 100%;
+}
+.showCase .info h2 {
+  color: #DF6951;
+  margin-bottom: 20px;
+}
+.showCase .info p {
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+.showCase .info a {
+  color: grey;
+}
+.showCase .info .find {
+  background-color: #F1A501;
+  padding: 16px 20px;
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+  display: inline-block;
+}
+.showCase .info .find:hover {
+  transform: scale(0.95);
+}
+.showCase .info .play {
+  width: 52px;
+  vertical-align: middle;
+  padding: 5px;
+}
+.showCase .woman {
+  width: 50%;
+  vertical-align: middle;
+}
+
+main section {
+  text-align: center;
+  line-height: 20px;
+  margin-bottom: 50px;
+  background-repeat: no-repeat;
+}
+main section:nth-of-type(1) {
+  background-image: url("Group 4.svg");
+  background-position: top right;
+}
+main section:nth-of-type(2) {
+  background-image: url("Decore.svg");
+  background-position: bottom right;
+  background-size: 120px;
+}
+main section h2 {
+  font-size: 50px;
+  line-height: 64.5px;
+  font-family: "Volkhov", serif;
+  color: #14183E;
+}
+main section .minicard {
+  display: inline-block;
+  border-radius: 15px;
+  padding: 20px 5px;
+  margin: 0 20px;
+  width: calc(25% - 30px);
+  position: relative;
+}
+main section .minicard:nth-of-type(1) {
+  margin-left: 0px;
+}
+main section .minicard:nth-of-type(4) {
+  margin-right: 0px;
+}
+main section .minicard .route {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main section .minicard .rect {
+  position: absolute;
+  left: -30px;
+  bottom: -30px;
+  z-index: -999999999;
+}
+main section .minicard:nth-of-type(2) {
+  box-shadow: 0 50px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+main section .minicard h4 {
+  font-size: 20px;
+  line-height: 27px;
+  font-family: "Ubuntu", sans-serif;
+  color: #1E1D4C;
+}
+main section .minicard p {
+  font-size: 16px;
+  line-height: 26px;
+  font-family: "Ubuntu", sans-serif;
+}
+main section .minicard p:nth-of-type(2) {
+  padding: 100%;
+}
+main section .city {
+  font-family: "Ubuntu", sans-serif;
+  width: calc(33.3333333333% - 20px);
+  display: inline-block;
+  margin-bottom: 50px;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1921568627);
+  margin: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+main section .city img {
+  width: 100%;
+  height: 420px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+main section .city .cityInfo {
+  padding: 15px;
+}
+main section .city .cityInfo h4 {
+  font-weight: 400;
+  line-height: 22px;
+  font-size: 18px;
+  color: #5E6282;
+  float: left;
+  margin-bottom: 15px;
+}
+main section .city .cityInfo h4:nth-of-type(2) {
+  float: right;
+}
+main section .city .cityInfo p {
+  clear: both;
+  line-height: 20px;
+  font-size: 16px;
+  display: block;
+  text-align: left;
+}
+main section .city .cityInfo p svg {
+  vertical-align: middle;
+}
+main .trip h2 {
+  font-size: 50px;
+  line-height: 64.5px;
+  font-family: "Volkhov", serif;
+  color: #14183E;
+  margin-bottom: 30px;
+}
+main .trip h4 {
+  line-height: 22px;
+  font-size: 18px;
+  color: #5E6282;
+}
+main .tripLeft {
+  display: inline-block;
+  width: 60%;
+  padding-left: 10px;
+}
+main .tripLeft .activList {
+  margin-bottom: 35px;
+}
+main .tripLeft .activList img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+main .tripLeft .activList .tripInfo {
+  font-family: "Ubuntu", sans-serif;
+  display: inline-block;
+  vertical-align: middle;
+}
+main .tripLeft .activList .tripInfo p {
+  font-size: 16px;
+  color: #5E6282;
+}
+main .tripRight {
+  display: inline-block;
+  width: 40%;
+  padding-right: 10px;
+}
+main .tripRight .tripCard {
+  width: 75%;
+  margin: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1647058824);
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+}
+main .tripRight .tripCard::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #59B1E6;
+  position: absolute;
+  top: -70px;
+  left: 50px;
+  filter: blur(50px);
+  z-index: -99999999;
+  opacity: 0.3;
+}
+main .tripRight .tripCard > img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+main .tripRight .tripCard a {
+  margin-right: 10px;
+}
+main .tripRight .tripCard h3, main .tripRight .tripCard p {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+main .tripRight .tripCard p {
+  color: #84829A;
+  display: inline-block;
+  width: calc(100% - 20px);
+  margin-bottom: 15px;
+}
+main .tripRight .tripCard p svg {
+  margin: 0;
+}
+main .tripRight .tripCard .tripMini {
+  position: absolute;
+  opacity: 0;
+  right: -150px;
+  bottom: 70px;
+  pointer-events: none;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 80%;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1294117647);
+}
+main .tripRight .tripCard .tripMini img {
+  width: 50px;
+  vertical-align: top;
+}
+main .tripRight .tripCard .tripMini .tripProgress {
+  display: inline-block;
+  width: calc(100% - 50px);
+  vertical-align: top;
+  padding-left: 10px;
+}
+main .tripRight .tripCard .tripMini .tripProgress .lineContainer {
+  background-color: #f5f5f5;
+  height: 5px;
+  width: 100%;
+  border-radius: 10px;
+}
+main .tripRight .tripCard .tripMini .tripProgress .lineContainer .line {
+  background-color: #8a79df;
+  height: 5px;
+  border-radius: 10px;
+}
+main .tripRight .tripCard svg {
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+main .tripRight .tripCard svg:hover ~ .tripMini {
+  opacity: 1;
+}
+main .feedback .feedLeft {
+  width: 40%;
+  float: left;
+  background-color: pink;
+}
+main .feedback .feedLeft h4 {
+  font-size: 18px;
+  line-height: 27px;
+}
+main .feedback .feedLeft h2 {
+  font-size: 50px;
+}
+main .feedback .feedLeft span {
+  background-color: #E5E5E5;
+  border-radius: 100%;
+  height: 12px;
+  width: 12px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: 50px;
+}
+main .feedback .feedLeft .active {
+  background-color: #39425D;
+}
+main .feedback .feedRight {
+  float: right;
+  width: 60%;
+  background-color: tomato;
+  padding-top: 34px;
+  position: relative;
+}
+main .feedback .feedRight .feedText {
+  width: calc(100% - 68px - 40px);
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+main .feedback .feedRight .feedText p {
+  font-size: 16px;
+}
+main .feedback .feedRight .feedText h2 {
+  font-size: 18px;
+}
+main .feedback .feedRight .feedText .name {
+  font-size: 14px;
+}
+main .feedback .feedRight .feedText img {
+  top: -34px;
+  left: -34px;
+  position: absolute;
+  width: 68px;
+}
+main .feedback .feedRight #secondSlide {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+main .feedback .feedRight #firstSlide {
+  position: relative;
+  z-index: 9;
+}
+main .feedback .feedRight .buttons {
+  float: right;
+  position: relative;
+  z-index: 99999999999;
 }/*# sourceMappingURL=style.css.map */
