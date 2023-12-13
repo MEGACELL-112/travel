@@ -325,10 +325,14 @@ main .tripRight .tripCard svg {
 main .tripRight .tripCard svg:hover ~ .tripMini {
   opacity: 1;
 }
+main .feedback {
+  overflow: hidden;
+  padding-bottom: 50px;
+}
 main .feedback .feedLeft {
   width: 40%;
+  font-family: "Ubuntu", sans-serif;
   float: left;
-  background-color: pink;
 }
 main .feedback .feedLeft h4 {
   font-size: 18px;
@@ -352,7 +356,6 @@ main .feedback .feedLeft .active {
 main .feedback .feedRight {
   float: right;
   width: 60%;
-  background-color: tomato;
   padding-top: 34px;
   padding-bottom: 40px;
   position: relative;
@@ -365,12 +368,19 @@ main .feedback .feedRight .feedText {
   transition: 0.3s;
   padding: 25px;
   box-sizing: border-box;
+  box-shadow: 5px 15px 30px rgba(47, 47, 47, 0.1294117647);
 }
 main .feedback .feedRight .feedText p {
+  line-height: 25px;
   font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+}
+main .feedback .feedRight .feedText p:nth-of-type(1) {
+  height: 75px;
 }
 main .feedback .feedRight .feedText h2 {
   font-size: 18px;
+  font-family: "Ubuntu", sans-serif;
 }
 main .feedback .feedRight .feedText img {
   top: -34px;
@@ -407,4 +417,160 @@ main .feedback .feedRight .buttons button {
 }
 main .feedback .feedRight .buttons button:nth-of-type(1) {
   transform: rotate(180deg);
+}
+main .company {
+  text-align: center;
+}
+main .company img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 45px;
+  filter: grayscale(100%);
+  transition: 0.3s;
+}
+main .company img:hover {
+  filter: grayscale(0%);
+}
+main .subs form {
+  text-align: center;
+  background-color: rgba(223, 215, 249, 0.2);
+  border-radius: 30px;
+  border-top-left-radius: 150px;
+  position: relative;
+  padding: 100px;
+}
+main .subs form h3 {
+  font-size: 33px;
+  font-family: "Ubuntu", sans-serif;
+  color: #5E6282;
+  text-align: center;
+  margin-bottom: 70px;
+}
+main .subs form .inputContainer {
+  z-index: 9;
+  position: relative;
+  width: 50%;
+  display: inline-block;
+}
+main .subs form .inputContainer input {
+  height: 70px;
+  width: 100%;
+  border-radius: 20px;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0 50px;
+}
+main .subs form .inputContainer img {
+  left: 20px;
+  height: 100%;
+  top: 0;
+  width: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .subs form button {
+  display: inline-block;
+  z-index: 9;
+  position: relative;
+  height: 70px;
+  border: none;
+  background: var(--gradient, linear-gradient(180deg, #FF946D 0%, #FF7D68 100%));
+  padding: 0px 45px;
+  font-size: 15px;
+  color: white;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-left: 20px;
+  cursor: pointer;
+}
+main .subs form img {
+  top: -15px;
+  right: -25px;
+  position: absolute;
+}
+main .subs form .circlesLeft {
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: -50px;
+}
+main .subs form .circlesRight {
+  top: 0;
+  right: 0px;
+}
+
+footer {
+  margin-top: 120px;
+}
+footer .container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+}
+footer .container .rights {
+  margin-top: 50px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 30px;
+}
+footer .container section h1 {
+  font-size: 44px;
+  font-family: "Ubuntu", sans-serif;
+  color: #181E4B;
+}
+footer .container section p {
+  font-size: 13px;
+  font-family: "Ubuntu", sans-serif;
+  color: #5E6282;
+}
+footer .container table th {
+  text-align: left;
+  color: #080809;
+  font-size: 21px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+footer .container table td {
+  padding-right: 30px;
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 30px;
+  color: #5E6282;
+}
+footer .container .social h2 {
+  font-size: 20px;
+  line-height: 20px;
+  font-family: "Ubuntu", sans-serif;
+  color: #5E6282;
+  font-weight: 300;
+}
+footer .container .social a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  background-image: url("Social.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+footer .container .social a:nth-child(2) {
+  background-image: url("Social.png");
+}
+footer .container .social a:nth-child(3) {
+  background-image: url("Social (2).svg");
+}
+footer .container .social a:nth-of-type(4) {
+  background-image: url("Google Play.svg");
+  width: 100px;
+}
+footer .container .social a:nth-of-type(5) {
+  background-image: url("Play Store.svg");
+  width: 100px;
 }/*# sourceMappingURL=style.css.map */
